@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resim Eşleştirme Oyunu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <h1>🧠 Resim Eşleştirme</h1>
+        <p class="subtitle">Kartları çevir, eşleri bul ve en iyi süreni kır.</p>
+      </header>
+
+      <section class="panel" aria-label="Oyun Bilgileri">
+        <div class="stat"><span>Hamle</span><strong id="moves">0</strong></div>
+        <div class="stat"><span>Süre</span><strong id="timer">00:00</strong></div>
+        <button id="restartBtn" class="btn" type="button">Yeniden Başlat</button>
+      </section>
+
+      <section id="gameBoard" class="board" aria-label="Resim eşleştirme kartları"></section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
